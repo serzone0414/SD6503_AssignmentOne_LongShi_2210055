@@ -1,0 +1,4 @@
+﻿Bob Smith, BS, 13/01/1980, bob.smith@demo.com, 80000.00, male
+Merry Kerr, MK, 14/02/1970, merry.kerr@demo.com, 85000.00, female
+Tom Silver, TS, 13/01/1960, tom.Silver@demo.com, 75000.00, male
+Anna Hu, AH, 27/07/1969, anna.hu@demo.com, 67000.00, female
