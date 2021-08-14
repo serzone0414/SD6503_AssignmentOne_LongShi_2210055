@@ -566,4 +566,3 @@ namespace SD6503_Assignment_One
         private System.Windows.Forms.Label label7;
     }
 }
-
