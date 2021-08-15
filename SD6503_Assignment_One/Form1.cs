@@ -298,5 +298,9 @@ namespace SD6503_Assignment_One
             btnAdd.Font = new Font(btnDelete.Font, FontStyle.Regular);
         }
 
+        private void labelSalaryReminder_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -10,13 +10,15 @@ namespace SD6503_Assignment_One
 {
     public class FileManager
     {
+        string fileName = @"C:\Users\serzo\source\repos\SD6503_Assignment_One\SD6503_Assignment_One\bin\Debug\employeeInfo.txt";
         public List<Employee> LoadEmployee()
         {
             try
             {
                 List<Employee> employeeList = new List<Employee>();
 
-                StreamReader sr = new StreamReader("employeeInfo.txt");
+                StreamReader sr = new StreamReader(fileName);
+                //StreamReader sr = new StreamReader("employeeInfo.txt");
 
                 while (!sr.EndOfStream)
                 {
@@ -38,7 +40,8 @@ namespace SD6503_Assignment_One
         {
             try
             {
-                StreamWriter sw = File.AppendText("employeeInfo.txt");
+                //StreamWriter sw = File.AppendText("employeeInfo.txt");
+                StreamWriter sw = File.AppendText(fileName);
 
                 sw.WriteLine((e.Name + ", " + e.Id + ", " + e.DateOfBirth + ", " +
                            e.Email + ", " + e.Salary.ToString() + ", " + e.Gender));
@@ -61,7 +64,8 @@ namespace SD6503_Assignment_One
                 try
                 {
                     List<Employee> employeeList = new List<Employee>();
-                    StreamReader sr = new StreamReader("employeeInfo.txt");
+                    StreamReader sr = new StreamReader(fileName);
+                    //StreamReader sr = new StreamReader("employeeInfo.txt");
                     string employeeID = selectedEmployee.Id;
 
                     while (!sr.EndOfStream)
@@ -78,9 +82,11 @@ namespace SD6503_Assignment_One
                     sr.Close();
 
 
-                    File.WriteAllText("employeeInfo.txt", string.Empty);
+                    // File.WriteAllText("employeeInfo.txt", string.Empty);
+                    File.WriteAllText(fileName, string.Empty);
 
-                    StreamWriter sw = File.AppendText("employeeInfo.txt");
+                    //StreamWriter sw = File.AppendText("employeeInfo.txt");
+                    StreamWriter sw = File.AppendText(fileName);
                     for (int i = 0; i < employeeList.Count; i++)
                     {
                         sw.WriteLine((employeeList[i].Name + ", " + employeeList[i].Id + ", " + employeeList[i].DateOfBirth + ", "

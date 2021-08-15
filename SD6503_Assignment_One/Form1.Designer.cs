@@ -80,9 +80,10 @@ namespace SD6503_Assignment_One
             // 
             this.btnDisplay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDisplay.BackgroundImage")));
             this.btnDisplay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDisplay.Location = new System.Drawing.Point(41, 73);
+            this.btnDisplay.Location = new System.Drawing.Point(55, 91);
+            this.btnDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDisplay.Name = "btnDisplay";
-            this.btnDisplay.Size = new System.Drawing.Size(125, 55);
+            this.btnDisplay.Size = new System.Drawing.Size(167, 69);
             this.btnDisplay.TabIndex = 8;
             this.btnDisplay.Text = "Display";
             this.ttpToolTip.SetToolTip(this.btnDisplay, "Displays all employees");
@@ -94,10 +95,11 @@ namespace SD6503_Assignment_One
             // lsbEmployee
             // 
             this.lsbEmployee.FormattingEnabled = true;
-            this.lsbEmployee.ItemHeight = 20;
-            this.lsbEmployee.Location = new System.Drawing.Point(41, 149);
+            this.lsbEmployee.ItemHeight = 25;
+            this.lsbEmployee.Location = new System.Drawing.Point(55, 186);
+            this.lsbEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lsbEmployee.Name = "lsbEmployee";
-            this.lsbEmployee.Size = new System.Drawing.Size(387, 444);
+            this.lsbEmployee.Size = new System.Drawing.Size(515, 554);
             this.lsbEmployee.TabIndex = 1;
             this.ttpToolTip.SetToolTip(this.lsbEmployee, "Displays a list of employees");
             this.lsbEmployee.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
@@ -105,45 +107,50 @@ namespace SD6503_Assignment_One
             // labelID
             // 
             this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(75, 128);
+            this.labelID.Location = new System.Drawing.Point(100, 160);
+            this.labelID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(65, 20);
+            this.labelID.Size = new System.Drawing.Size(82, 25);
             this.labelID.TabIndex = 2;
             this.labelID.Text = "Staff ID";
             // 
             // labelDateOfBirth
             // 
             this.labelDateOfBirth.AutoSize = true;
-            this.labelDateOfBirth.Location = new System.Drawing.Point(38, 210);
+            this.labelDateOfBirth.Location = new System.Drawing.Point(51, 262);
+            this.labelDateOfBirth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDateOfBirth.Name = "labelDateOfBirth";
-            this.labelDateOfBirth.Size = new System.Drawing.Size(102, 20);
+            this.labelDateOfBirth.Size = new System.Drawing.Size(135, 25);
             this.labelDateOfBirth.TabIndex = 3;
             this.labelDateOfBirth.Text = "Date Of Birth";
             // 
             // labelEmail
             // 
             this.labelEmail.AutoSize = true;
-            this.labelEmail.Location = new System.Drawing.Point(92, 282);
+            this.labelEmail.Location = new System.Drawing.Point(123, 352);
+            this.labelEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(48, 20);
+            this.labelEmail.Size = new System.Drawing.Size(65, 25);
             this.labelEmail.TabIndex = 4;
             this.labelEmail.Text = "Email";
             // 
             // labelSalary
             // 
             this.labelSalary.AutoSize = true;
-            this.labelSalary.Location = new System.Drawing.Point(87, 357);
+            this.labelSalary.Location = new System.Drawing.Point(116, 446);
+            this.labelSalary.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSalary.Name = "labelSalary";
-            this.labelSalary.Size = new System.Drawing.Size(53, 20);
+            this.labelSalary.Size = new System.Drawing.Size(73, 25);
             this.labelSalary.TabIndex = 5;
             this.labelSalary.Text = "Salary";
             // 
             // labelGender
             // 
             this.labelGender.AutoSize = true;
-            this.labelGender.Location = new System.Drawing.Point(77, 448);
+            this.labelGender.Location = new System.Drawing.Point(103, 560);
+            this.labelGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGender.Name = "labelGender";
-            this.labelGender.Size = new System.Drawing.Size(63, 20);
+            this.labelGender.Size = new System.Drawing.Size(83, 25);
             this.labelGender.TabIndex = 6;
             this.labelGender.Text = "Gender";
             // 
@@ -155,9 +162,11 @@ namespace SD6503_Assignment_One
             this.groupBox1.Controls.Add(this.btnAZ);
             this.groupBox1.Controls.Add(this.lsbEmployee);
             this.groupBox1.Controls.Add(this.btnDisplay);
-            this.groupBox1.Location = new System.Drawing.Point(512, 47);
+            this.groupBox1.Location = new System.Drawing.Point(683, 59);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(466, 736);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(621, 920);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Employee list";
@@ -165,17 +174,19 @@ namespace SD6503_Assignment_One
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(64, 632);
+            this.label7.Location = new System.Drawing.Point(85, 790);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 20);
+            this.label7.Size = new System.Drawing.Size(92, 25);
             this.label7.TabIndex = 11;
             this.label7.Text = "Search: ";
             // 
             // textBoxSearch
             // 
-            this.textBoxSearch.Location = new System.Drawing.Point(138, 629);
+            this.textBoxSearch.Location = new System.Drawing.Point(184, 786);
+            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(259, 26);
+            this.textBoxSearch.Size = new System.Drawing.Size(344, 31);
             this.textBoxSearch.TabIndex = 10;
             this.ttpToolTip.SetToolTip(this.textBoxSearch, "Enter the search name ");
             this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
@@ -184,9 +195,10 @@ namespace SD6503_Assignment_One
             // 
             this.btnZA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnZA.BackgroundImage")));
             this.btnZA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnZA.Location = new System.Drawing.Point(303, 73);
+            this.btnZA.Location = new System.Drawing.Point(404, 91);
+            this.btnZA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnZA.Name = "btnZA";
-            this.btnZA.Size = new System.Drawing.Size(125, 55);
+            this.btnZA.Size = new System.Drawing.Size(167, 69);
             this.btnZA.TabIndex = 8;
             this.btnZA.Text = "Z-A";
             this.ttpToolTip.SetToolTip(this.btnZA, "Sort employees name Z-A");
@@ -199,9 +211,10 @@ namespace SD6503_Assignment_One
             // 
             this.btnAZ.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAZ.BackgroundImage")));
             this.btnAZ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAZ.Location = new System.Drawing.Point(172, 73);
+            this.btnAZ.Location = new System.Drawing.Point(229, 91);
+            this.btnAZ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAZ.Name = "btnAZ";
-            this.btnAZ.Size = new System.Drawing.Size(125, 55);
+            this.btnAZ.Size = new System.Drawing.Size(167, 69);
             this.btnAZ.TabIndex = 7;
             this.btnAZ.Text = "A-Z";
             this.ttpToolTip.SetToolTip(this.btnAZ, "Sort employees name A-Z");
@@ -212,46 +225,51 @@ namespace SD6503_Assignment_One
             // 
             // textBoxGenderDisplay
             // 
-            this.textBoxGenderDisplay.Location = new System.Drawing.Point(146, 442);
+            this.textBoxGenderDisplay.Location = new System.Drawing.Point(195, 552);
+            this.textBoxGenderDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxGenderDisplay.Name = "textBoxGenderDisplay";
             this.textBoxGenderDisplay.ReadOnly = true;
-            this.textBoxGenderDisplay.Size = new System.Drawing.Size(198, 26);
+            this.textBoxGenderDisplay.Size = new System.Drawing.Size(263, 31);
             this.textBoxGenderDisplay.TabIndex = 15;
             this.ttpToolTip.SetToolTip(this.textBoxGenderDisplay, "Displays employee\'s  gender");
             // 
             // textBoxSalaryDisplay
             // 
-            this.textBoxSalaryDisplay.Location = new System.Drawing.Point(146, 357);
+            this.textBoxSalaryDisplay.Location = new System.Drawing.Point(195, 446);
+            this.textBoxSalaryDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxSalaryDisplay.Name = "textBoxSalaryDisplay";
             this.textBoxSalaryDisplay.ReadOnly = true;
-            this.textBoxSalaryDisplay.Size = new System.Drawing.Size(198, 26);
+            this.textBoxSalaryDisplay.Size = new System.Drawing.Size(263, 31);
             this.textBoxSalaryDisplay.TabIndex = 14;
             this.ttpToolTip.SetToolTip(this.textBoxSalaryDisplay, "Displays employee\'s salary");
             // 
             // textBoxEmailDisplay
             // 
-            this.textBoxEmailDisplay.Location = new System.Drawing.Point(146, 279);
+            this.textBoxEmailDisplay.Location = new System.Drawing.Point(195, 349);
+            this.textBoxEmailDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxEmailDisplay.Name = "textBoxEmailDisplay";
             this.textBoxEmailDisplay.ReadOnly = true;
-            this.textBoxEmailDisplay.Size = new System.Drawing.Size(198, 26);
+            this.textBoxEmailDisplay.Size = new System.Drawing.Size(263, 31);
             this.textBoxEmailDisplay.TabIndex = 13;
             this.ttpToolTip.SetToolTip(this.textBoxEmailDisplay, "Displays employee\'s email address");
             // 
             // textBoxDateOfBirthDisplay
             // 
-            this.textBoxDateOfBirthDisplay.Location = new System.Drawing.Point(146, 204);
+            this.textBoxDateOfBirthDisplay.Location = new System.Drawing.Point(195, 255);
+            this.textBoxDateOfBirthDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxDateOfBirthDisplay.Name = "textBoxDateOfBirthDisplay";
             this.textBoxDateOfBirthDisplay.ReadOnly = true;
-            this.textBoxDateOfBirthDisplay.Size = new System.Drawing.Size(198, 26);
+            this.textBoxDateOfBirthDisplay.Size = new System.Drawing.Size(263, 31);
             this.textBoxDateOfBirthDisplay.TabIndex = 12;
             this.ttpToolTip.SetToolTip(this.textBoxDateOfBirthDisplay, "Displays employee\'s date of birth");
             // 
             // textBoxStaffIdDisplay
             // 
-            this.textBoxStaffIdDisplay.Location = new System.Drawing.Point(146, 128);
+            this.textBoxStaffIdDisplay.Location = new System.Drawing.Point(195, 160);
+            this.textBoxStaffIdDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxStaffIdDisplay.Name = "textBoxStaffIdDisplay";
             this.textBoxStaffIdDisplay.ReadOnly = true;
-            this.textBoxStaffIdDisplay.Size = new System.Drawing.Size(198, 26);
+            this.textBoxStaffIdDisplay.Size = new System.Drawing.Size(263, 31);
             this.textBoxStaffIdDisplay.TabIndex = 11;
             this.ttpToolTip.SetToolTip(this.textBoxStaffIdDisplay, "Displays employee\'s staff ID");
             // 
@@ -276,9 +294,11 @@ namespace SD6503_Assignment_One
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(50, 47);
+            this.groupBox2.Location = new System.Drawing.Point(67, 59);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(418, 736);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(557, 920);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "New employee";
@@ -286,54 +306,61 @@ namespace SD6503_Assignment_One
             // labelGenderReminder
             // 
             this.labelGenderReminder.AutoSize = true;
-            this.labelGenderReminder.Location = new System.Drawing.Point(159, 507);
+            this.labelGenderReminder.Location = new System.Drawing.Point(212, 634);
+            this.labelGenderReminder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGenderReminder.Name = "labelGenderReminder";
-            this.labelGenderReminder.Size = new System.Drawing.Size(157, 20);
+            this.labelGenderReminder.Size = new System.Drawing.Size(214, 25);
             this.labelGenderReminder.TabIndex = 18;
             this.labelGenderReminder.Text = "Please select gender";
             // 
             // labelSalaryReminder
             // 
             this.labelSalaryReminder.AutoSize = true;
-            this.labelSalaryReminder.Location = new System.Drawing.Point(159, 426);
+            this.labelSalaryReminder.Location = new System.Drawing.Point(212, 532);
+            this.labelSalaryReminder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSalaryReminder.Name = "labelSalaryReminder";
-            this.labelSalaryReminder.Size = new System.Drawing.Size(136, 20);
+            this.labelSalaryReminder.Size = new System.Drawing.Size(185, 25);
             this.labelSalaryReminder.TabIndex = 17;
             this.labelSalaryReminder.Text = "enter number only";
+            this.labelSalaryReminder.Click += new System.EventHandler(this.labelSalaryReminder_Click);
             // 
             // labelEmailReminder
             // 
             this.labelEmailReminder.AutoSize = true;
-            this.labelEmailReminder.Location = new System.Drawing.Point(159, 348);
+            this.labelEmailReminder.Location = new System.Drawing.Point(212, 435);
+            this.labelEmailReminder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelEmailReminder.Name = "labelEmailReminder";
-            this.labelEmailReminder.Size = new System.Drawing.Size(149, 20);
+            this.labelEmailReminder.Size = new System.Drawing.Size(204, 25);
             this.labelEmailReminder.TabIndex = 16;
             this.labelEmailReminder.Text = "e.g. abc@xtra.co.nz";
             // 
             // labelDateOfBirthReminder
             // 
             this.labelDateOfBirthReminder.AutoSize = true;
-            this.labelDateOfBirthReminder.Location = new System.Drawing.Point(159, 279);
+            this.labelDateOfBirthReminder.Location = new System.Drawing.Point(212, 349);
+            this.labelDateOfBirthReminder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDateOfBirthReminder.Name = "labelDateOfBirthReminder";
-            this.labelDateOfBirthReminder.Size = new System.Drawing.Size(119, 20);
+            this.labelDateOfBirthReminder.Size = new System.Drawing.Size(162, 25);
             this.labelDateOfBirthReminder.TabIndex = 15;
             this.labelDateOfBirthReminder.Text = "e.g. 14/03/1970";
             // 
             // labelIDReminder
             // 
             this.labelIDReminder.AutoSize = true;
-            this.labelIDReminder.Location = new System.Drawing.Point(159, 204);
+            this.labelIDReminder.Location = new System.Drawing.Point(212, 255);
+            this.labelIDReminder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelIDReminder.Name = "labelIDReminder";
-            this.labelIDReminder.Size = new System.Drawing.Size(197, 20);
+            this.labelIDReminder.Size = new System.Drawing.Size(261, 25);
             this.labelIDReminder.TabIndex = 14;
             this.labelIDReminder.Text = "Staff ID need to be unique";
             // 
             // labelNameReminder
             // 
             this.labelNameReminder.AutoSize = true;
-            this.labelNameReminder.Location = new System.Drawing.Point(159, 118);
+            this.labelNameReminder.Location = new System.Drawing.Point(212, 148);
+            this.labelNameReminder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNameReminder.Name = "labelNameReminder";
-            this.labelNameReminder.Size = new System.Drawing.Size(113, 20);
+            this.labelNameReminder.Size = new System.Drawing.Size(152, 25);
             this.labelNameReminder.TabIndex = 13;
             this.labelNameReminder.Text = "e.g. Bob Smith";
             // 
@@ -341,9 +368,10 @@ namespace SD6503_Assignment_One
             // 
             this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
             this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdd.Location = new System.Drawing.Point(163, 580);
+            this.btnAdd.Location = new System.Drawing.Point(217, 725);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(145, 56);
+            this.btnAdd.Size = new System.Drawing.Size(193, 70);
             this.btnAdd.TabIndex = 12;
             this.btnAdd.Text = "Add";
             this.ttpToolTip.SetToolTip(this.btnAdd, "Add new employee");
@@ -354,59 +382,66 @@ namespace SD6503_Assignment_One
             // 
             // comboBoxGender
             // 
+            this.comboBoxGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxGender.FormattingEnabled = true;
             this.comboBoxGender.Items.AddRange(new object[] {
             "Male",
             "Female",
             "Other"});
-            this.comboBoxGender.Location = new System.Drawing.Point(154, 476);
+            this.comboBoxGender.Location = new System.Drawing.Point(205, 595);
+            this.comboBoxGender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxGender.Name = "comboBoxGender";
-            this.comboBoxGender.Size = new System.Drawing.Size(209, 28);
+            this.comboBoxGender.Size = new System.Drawing.Size(277, 33);
             this.comboBoxGender.TabIndex = 11;
             this.ttpToolTip.SetToolTip(this.comboBoxGender, "Select gender");
             this.comboBoxGender.Leave += new System.EventHandler(this.comboBoxGender_Leave);
             // 
             // textBoxSalary
             // 
-            this.textBoxSalary.Location = new System.Drawing.Point(154, 397);
+            this.textBoxSalary.Location = new System.Drawing.Point(205, 496);
+            this.textBoxSalary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxSalary.Name = "textBoxSalary";
-            this.textBoxSalary.Size = new System.Drawing.Size(209, 26);
+            this.textBoxSalary.Size = new System.Drawing.Size(277, 31);
             this.textBoxSalary.TabIndex = 10;
             this.ttpToolTip.SetToolTip(this.textBoxSalary, "Enter number");
             this.textBoxSalary.Leave += new System.EventHandler(this.textBoxSalary_Leave);
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(154, 319);
+            this.textBoxEmail.Location = new System.Drawing.Point(205, 399);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(209, 26);
+            this.textBoxEmail.Size = new System.Drawing.Size(277, 31);
             this.textBoxEmail.TabIndex = 9;
             this.ttpToolTip.SetToolTip(this.textBoxEmail, "Enter email adress");
             this.textBoxEmail.Leave += new System.EventHandler(this.textBoxEmail_Leave);
             // 
             // textBoxDateOfBirth
             // 
-            this.textBoxDateOfBirth.Location = new System.Drawing.Point(154, 238);
+            this.textBoxDateOfBirth.Location = new System.Drawing.Point(205, 298);
+            this.textBoxDateOfBirth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxDateOfBirth.Name = "textBoxDateOfBirth";
-            this.textBoxDateOfBirth.Size = new System.Drawing.Size(209, 26);
+            this.textBoxDateOfBirth.Size = new System.Drawing.Size(277, 31);
             this.textBoxDateOfBirth.TabIndex = 8;
             this.ttpToolTip.SetToolTip(this.textBoxDateOfBirth, "Format: dd/MMYYYY");
             this.textBoxDateOfBirth.Leave += new System.EventHandler(this.textBoxDateOfBirth_Leave);
             // 
             // textBoxID
             // 
-            this.textBoxID.Location = new System.Drawing.Point(154, 162);
+            this.textBoxID.Location = new System.Drawing.Point(205, 202);
+            this.textBoxID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxID.Name = "textBoxID";
-            this.textBoxID.Size = new System.Drawing.Size(209, 26);
+            this.textBoxID.Size = new System.Drawing.Size(277, 31);
             this.textBoxID.TabIndex = 7;
             this.ttpToolTip.SetToolTip(this.textBoxID, "Staff ID has to be unique");
             this.textBoxID.Leave += new System.EventHandler(this.textBoxID_Leave);
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(154, 80);
+            this.textBoxName.Location = new System.Drawing.Point(205, 100);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(209, 26);
+            this.textBoxName.Size = new System.Drawing.Size(277, 31);
             this.textBoxName.TabIndex = 6;
             this.ttpToolTip.SetToolTip(this.textBoxName, "Enter full name");
             this.textBoxName.Leave += new System.EventHandler(this.textBoxName_Leave);
@@ -414,54 +449,60 @@ namespace SD6503_Assignment_One
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(24, 484);
+            this.label6.Location = new System.Drawing.Point(32, 605);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 20);
+            this.label6.Size = new System.Drawing.Size(83, 25);
             this.label6.TabIndex = 5;
             this.label6.Text = "Gender";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 397);
+            this.label5.Location = new System.Drawing.Point(32, 496);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 20);
+            this.label5.Size = new System.Drawing.Size(73, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "Salary";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 319);
+            this.label4.Location = new System.Drawing.Point(32, 399);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 20);
+            this.label4.Size = new System.Drawing.Size(65, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Email";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 238);
+            this.label3.Location = new System.Drawing.Point(32, 298);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 20);
+            this.label3.Size = new System.Drawing.Size(135, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Date Of Birth";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 162);
+            this.label2.Location = new System.Drawing.Point(32, 202);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 20);
+            this.label2.Size = new System.Drawing.Size(82, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Staff ID";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 86);
+            this.label1.Location = new System.Drawing.Point(32, 108);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.Size = new System.Drawing.Size(68, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             // 
@@ -478,9 +519,11 @@ namespace SD6503_Assignment_One
             this.groupBox3.Controls.Add(this.labelDateOfBirth);
             this.groupBox3.Controls.Add(this.labelSalary);
             this.groupBox3.Controls.Add(this.labelEmail);
-            this.groupBox3.Location = new System.Drawing.Point(1015, 47);
+            this.groupBox3.Location = new System.Drawing.Point(1353, 59);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(424, 736);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(565, 920);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Staff Info";
@@ -490,9 +533,10 @@ namespace SD6503_Assignment_One
             this.btnDelete.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
             this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDelete.Location = new System.Drawing.Point(136, 550);
+            this.btnDelete.Location = new System.Drawing.Point(181, 688);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(179, 46);
+            this.btnDelete.Size = new System.Drawing.Size(239, 58);
             this.btnDelete.TabIndex = 16;
             this.btnDelete.Text = "Delete";
             this.ttpToolTip.SetToolTip(this.btnDelete, "Delete select employee");
@@ -503,13 +547,14 @@ namespace SD6503_Assignment_One
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1635, 878);
+            this.ClientSize = new System.Drawing.Size(2180, 1098);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
