@@ -31,6 +31,7 @@ namespace SD6503_Assignment_One
                 StreamReader sr = new StreamReader(fileName);
                 //StreamReader sr = new StreamReader("employeeInfo.txt");
 
+                ///Read the txt file entil the end of the line.
                 while (!sr.EndOfStream)
                 {
                     string[] info = sr.ReadLine().Replace(", ", ",").Split(',');
@@ -54,6 +55,7 @@ namespace SD6503_Assignment_One
         /// <returns>Bool value: It returns true if successfully added the new employee, returns false if it is failed.</returns>
         public bool AddEmployee(Employee e)
         {
+            ///Keep writing based on the exisitng txt file.
             try
             {
                 //StreamWriter sw = File.AppendText("employeeInfo.txt");
@@ -84,11 +86,12 @@ namespace SD6503_Assignment_One
         /// <param name="selectedEmployee">The chosen employee which is going to be deleted.</param>
         public void DeleteEmployee(Employee selectedEmployee)
         {
-                try
-                {
+            //Reading the files from the txt file, but not include the one with selectedEmployee's ID, as this is the one will be deleted.
+            try
+            {
                     List<Employee> employeeList = new List<Employee>();
                     StreamReader sr = new StreamReader(fileName);
-                    //StreamReader sr = new StreamReader("employeeInfo.txt");
+                    ///StreamReader sr = new StreamReader("employeeInfo.txt");
                     string employeeID = selectedEmployee.Id;
 
                     while (!sr.EndOfStream)
@@ -104,10 +107,11 @@ namespace SD6503_Assignment_One
                     }
                     sr.Close();
 
-
+                    ///Clear the entire txt file.
                     // File.WriteAllText("employeeInfo.txt", string.Empty);
                     File.WriteAllText(fileName, string.Empty);
 
+                    ///Re-write everything back into the txt file.
                     //StreamWriter sw = File.AppendText("employeeInfo.txt");
                     StreamWriter sw = File.AppendText(fileName);
                     for (int i = 0; i < employeeList.Count; i++)

@@ -76,6 +76,7 @@ namespace SD6503_Assignment_One
                 MessageBox.Show("Email can not be empty.");
                 return false;
             }
+            ///email has to have "@" which is before "."
             if (emailAddress.IndexOf("@") > -1)
             {
                 if (emailAddress.IndexOf(".", emailAddress.IndexOf("@")) > emailAddress.IndexOf("@"))
@@ -102,6 +103,8 @@ namespace SD6503_Assignment_One
                 MessageBox.Show("Name can not be empty.");
                 return false;
             }
+
+            ///name should not have any number.
             if (name.All(char.IsDigit))
             {
                 MessageBox.Show("Name can not include number.");
@@ -127,6 +130,8 @@ namespace SD6503_Assignment_One
                 MessageBox.Show("Salary can not be empty.");
                 return false;
             }
+
+            ///salary should be numbers only.
             foreach(char c in Salary)
             {
                 if (c < '0' || c > '9')
@@ -155,6 +160,8 @@ namespace SD6503_Assignment_One
                 MessageBox.Show("ID can not be empty.");
                 return false;
             }
+
+            ///Id can not be the same with other employee
             foreach (Employee e in clist)
             {
                 if (e.Id.ToLower().Contains(ID.ToLower()))
@@ -198,6 +205,7 @@ namespace SD6503_Assignment_One
                 return false;
             }
 
+            ///Date format has to be in the certain way.
             DateTime d;
             string[] formats = { "dd/MM/yyyy", "dd/M/yyyy", "d/M/yyyy", "d/MM/yyyy"};
             bool dateFormat = DateTime.TryParseExact(
