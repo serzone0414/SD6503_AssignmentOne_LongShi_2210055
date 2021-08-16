@@ -82,6 +82,7 @@ namespace AutoTestProject
             autoTestSession.FindElementByAccessibilityId("lsbEmployee");
         }
 
+  
         [TestMethod]
         public void AutomationOfTheApp()
         {

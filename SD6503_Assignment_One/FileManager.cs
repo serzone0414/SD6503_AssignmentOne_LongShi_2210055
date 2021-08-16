@@ -8,9 +8,20 @@ using System.Windows.Forms;
 
 namespace SD6503_Assignment_One
 {
+    /// <summary>
+    /// FileManager class is for helping the application to read, write delete the employee's information from txt file.
+    /// </summary>
     public class FileManager
     {
+        /// <summary>
+        /// the string fileName is the local path of employeeInfo.txt file, it is created for automation testing using.
+        /// </summary>
         string fileName = @"C:\Users\serzo\source\repos\SD6503_Assignment_One\SD6503_Assignment_One\bin\Debug\employeeInfo.txt";
+
+        /// <summary>
+        /// LoadEmployee method reads the data from emoloyeeInfo.txt file and pass those values into a list of employee.
+        /// </summary>
+        /// <returns>A list of employee objects</returns>
         public List<Employee> LoadEmployee()
         {
             try
@@ -36,6 +47,11 @@ namespace SD6503_Assignment_One
             }
         }
 
+        /// <summary>
+        /// AddEmployee is to add new employee into the employeeInfo.txt file in the proper format.
+        /// </summary>
+        /// <param name="e">This object is the new employee which contains all the information needed for creating the new employee.</param>
+        /// <returns>Bool value: It returns true if successfully added the new employee, returns false if it is failed.</returns>
         public bool AddEmployee(Employee e)
         {
             try
@@ -59,6 +75,13 @@ namespace SD6503_Assignment_One
                 
         }
 
+        /// <summary>
+        /// DeleteEmployee is to remove any selected emloyee from the emloyeeInfo.txt file.
+        /// It uses selcted employee's ID as primary key to determin which line to delete.
+        /// The logic of this method is getting a copy of whole employee list but not included the one needs to be deleted.
+        /// Then re-write the employeeInfo.txt file from the copy, thus the new copy would not have that employee anymore.
+        /// </summary>
+        /// <param name="selectedEmployee">The chosen employee which is going to be deleted.</param>
         public void DeleteEmployee(Employee selectedEmployee)
         {
                 try

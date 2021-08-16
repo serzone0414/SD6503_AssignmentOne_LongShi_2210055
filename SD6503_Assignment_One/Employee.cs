@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace SD6503_Assignment_One
 {
+    /// <summary>
+    /// This class is for creating a object type to manage all the employee's informations.
+    /// </summary>
     public class Employee
     {
-        //Declare variables for Employee's class.
+        /// <summary>
+        /// Declare variables for Employee's class.
+        /// </summary>
         private string name;
         private string id;
         private string dateOfBirth;
@@ -16,7 +21,9 @@ namespace SD6503_Assignment_One
         private float salary;
         private string gender;
 
-        //Default constructor
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public Employee()
         {
             name = "unknown";
@@ -27,7 +34,15 @@ namespace SD6503_Assignment_One
             gender = "unknown";
         }
 
-        //Parameterized constructor with all fields inlcuded
+        /// <summary>
+        /// Parameterized constructor with all fields inlcuded
+        /// </summary>
+        /// <param name="name"></param>Employee's name
+        /// <param name="id"></param>Employee's Staff ID
+        /// <param name="dateOfBirth"></param> Employee's date of birth
+        /// <param name="email"></param> Employee's email address
+        /// <param name="salary"></param> Employee's salary amount
+        /// <param name="gender"></param> Employee's gender
         public Employee(string name, string id, string dateOfBirth, string email, float salary, string gender)
         {
             this.name = name;
@@ -38,7 +53,9 @@ namespace SD6503_Assignment_One
             this.gender = gender;
         }
 
-        //Properties for all fields of the class.
+        /// <summary>
+        /// Properties for all fields of the class. Entire data fields are having public set and get functions.
+        /// </summary>
         public string Name { get => name; set => name = value; }
         public string Id { get => id; set => id = value; }
         public string DateOfBirth { get => dateOfBirth; set => dateOfBirth = value; }
@@ -47,13 +64,23 @@ namespace SD6503_Assignment_One
         public string Gender { get => gender; set => gender = value; }
 
 
-        //Method name: ToString (override)
-        //Function: return employee's name instead of the project name.
+        /// <summary>
+        /// To change the employee's name instead of the project name for ToString method for this class.
+        /// </summary>
+        /// <returns>A string contains the employee's name</returns>
         public override string ToString()
         {
             return name;
         }
 
+        /// <summary>
+        /// To override the Equals definition to:
+        /// if object is empty, result is false
+        /// if the object is not empty, call another method Equals() by passing the object. 
+        /// get the returning value from that function.
+        /// </summary>
+        /// <param name="obj">the object is going to be compared with.</param>
+        /// <returns>Bool value depends on the compared result.</returns>
         public override bool Equals(object obj)
         {
             if (obj == null)
@@ -72,6 +99,11 @@ namespace SD6503_Assignment_One
             }
         }
 
+        /// <summary>
+        /// Compare two employee objects are the same or not based on thier Id.
+        /// </summary>
+        /// <param name="employee">the employee object is going to be compared with. </param>
+        /// <returns>Bool value depends on two employees' Id comparision result. </returns>
         public bool Equals(Employee employee)
         {
             if (employee == null)
@@ -79,6 +111,11 @@ namespace SD6503_Assignment_One
             return (this.Id == employee.Id);
         }
 
+        /// <summary>
+        /// Override GetHashCode method for this class.
+        /// let the object determinded by ID which is the unique value for employees.
+        /// </summary>
+        /// <returns>Int value contains the Id information.</returns>
         public override int GetHashCode()
         {
             return Id.GetHashCode();
